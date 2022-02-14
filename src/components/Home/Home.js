@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import style from './Home.css'
 function SearchBar(props) {
 	const navigate = useNavigate();
 	const [state, setState] = useState(null);
