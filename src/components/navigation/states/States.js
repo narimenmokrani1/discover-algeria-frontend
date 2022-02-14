@@ -1,12 +1,26 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
-function States({ statesByRegion }) {
+function States() {
+	const { region } = useParams();
+	const [statesByRegion, setStatesByRegion] = useState([]);
 
-	// if (!state) {
-	// 	return <h1>still loading...</h1>;
-	// }
+	useEffect(() => {
+		const url = `http://localhost:3000/states/regions/${region}`;
+		fetch(url)
+			.then((res) => res.json())
+			.then((res) => {
+				console.log(res);
+				setStatesByRegion(res);
+			});
+	}, [region]);
+
+	if (statesByRegion.length === 0) {
+		return <h1>still loading...</h1>;
+	}
 	return (
 		<div>
 			{statesByRegion.map((element) => {
@@ -15,7 +29,9 @@ function States({ statesByRegion }) {
 						<h1>
 							{element.state} {element.state_code}
 						</h1>
-						<img src={element.image_url} alt='' />
+						<Link to={`/states/${element._id}`}>
+							<img src={element.image_url} alt='' />
+						</Link>
 					</div>
 				);
 			})}

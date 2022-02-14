@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-function SearchBar({ setStatesByRegion, ...props }) {
+import { useNavigate } from 'react-router-dom';
+function SearchBar(props) {
+	const navigate = useNavigate();
 	const [state, setState] = useState(null);
 	const [noState, setNoState] = useState([]);
 	const [region, setRegion] = useState('');
@@ -29,16 +31,12 @@ function SearchBar({ setStatesByRegion, ...props }) {
 	function findStates(event) {
 		event.preventDefault();
 		console.log('looking for states');
+
 		if (!region) {
 			return;
 		}
-		const url = `http://localhost:3000/states/regions/${region}`;
-		fetch(url)
-			.then((res) => res.json())
-			.then((res) => {
-				console.log(res);
-				setStatesByRegion(res);
-			});
+
+		navigate(`/regions/${region}`);
 	}
 	return (
 		<div>
