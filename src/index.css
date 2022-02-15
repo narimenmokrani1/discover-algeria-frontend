@@ -15,3 +15,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --silver: rgb(194, 188, 187);
+  --cooper: rgb(174, 113, 66);
+  --apricot: rgb(251, 189, 131);
+  --brown: rgb(72, 27, 1);
+  --tan: rgb(156, 98, 54);
+
+}
