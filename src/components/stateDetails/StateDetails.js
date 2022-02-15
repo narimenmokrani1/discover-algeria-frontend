@@ -30,6 +30,15 @@ function StateDetails(props) {
 				<Link to={`/states/${state._id}`}>
 					<img src={state.image_url} alt='' />
 				</Link>
+                <div>
+                    <img src={state.clothes_url} alt="" />
+                    <h3>{state.traditional_clothes}</h3>
+                </div>
+                <div>
+                    <img src={state.food_url} alt="" />
+                    <h3>{state.tradtional_food}</h3>
+                </div>
+            <button>Click to check attractions</button>
 			</div>
 		</div>
 	);

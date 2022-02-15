@@ -48,6 +48,7 @@ function SearchBar(props) {
 					onChange={(event) => {
 						setRegion(event.target.value);
 					}}>
+						<option value="">select a region to look up</option>
 					{noState.map((option, index) => {
 						return (
 							<option key={index} value={option} className='option'>
