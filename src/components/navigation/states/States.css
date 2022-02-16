@@ -32,7 +32,10 @@ body {
 
 .card-image {      
   width: auto;
+  min-height: 700px;
+  max-width: 500px;
   height: 100%;
+  /* object-fit: cover; */
 }
 
 .card__overlay {
@@ -57,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2em;
-  padding: 1.2em;
+  padding: 0.1em;
   border-radius: calc(var(--curve) * 1px) 0 0 0;    
 
   transform: translateY(-100%);

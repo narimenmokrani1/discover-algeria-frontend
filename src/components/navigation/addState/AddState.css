@@ -1,0 +1,23 @@
+.create {
+}
+
+.form {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 20px;
+	background-color: var(--beige);
+}
+
+.inputs {
+	display: grid;
+	gap: 1em;
+}
+
+.state-input {
+}
+
+.state-input > input {
+	border: 1px solid white;
+	color: white;
+}

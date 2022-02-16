@@ -1,12 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { useParams } from 'react-router';
+import { useParams, useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 
 function StateDetails(props) {
 	const { _id } = useParams();
 	const [state, setState] = useState(null);
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		const url = `http://localhost:3000/states/${_id}`;
@@ -17,6 +18,10 @@ function StateDetails(props) {
 				setState(res);
 			});
 	}, [_id]);
+
+	function findAttraction() {
+		navigate(`/states/attractions/${_id}`);
+	}
 
 	if (!state) {
 		return <h1>still loading...</h1>;
@@ -30,15 +35,15 @@ function StateDetails(props) {
 				<Link to={`/states/${state._id}`}>
 					<img src={state.image_url} alt='' />
 				</Link>
-                <div>
-                    <img src={state.clothes_url} alt="" />
-                    <h3>{state.traditional_clothes}</h3>
-                </div>
-                <div>
-                    <img src={state.food_url} alt="" />
-                    <h3>{state.tradtional_food}</h3>
-                </div>
-            <button>Click to check attractions</button>
+				<div>
+					<img src={state.clothes_url} alt='' />
+					<h3>{state.traditional_clothes}</h3>
+				</div>
+				<div>
+					<img src={state.food_url} alt='' />
+					<h3>{state.tradtional_food}</h3>
+				</div>
+				<button onClick={findAttraction}>Click to check attractions</button>
 			</div>
 		</div>
 	);

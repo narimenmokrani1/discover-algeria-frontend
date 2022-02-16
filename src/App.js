@@ -6,6 +6,9 @@ import StateDetails from './components/stateDetails/StateDetails';
 import Footer from './components/footer/Footer';
 import About from './components/navigation/about/About';
 import Navigation from './components/navigation/Navigation';
+import Attractions from './components/Attractions';
+import AddState from './components/navigation/addState/AddState';
+// import AddState from './components/navigation/addState/AddState';
 function App() {
 	return (
 		<div className='App'>
@@ -19,6 +22,8 @@ function App() {
 				{/* <Route path='/about' element={<About />} /> */}
 				<Route path='/states/:_id' element={<StateDetails />} />
 				<Route path='/about' element={<About />} />
+        <Route path='/states/attractions/:_id' element={<Attractions/>}/>
+        <Route path='/addstate' element={<AddState/>} />
 			</Routes>
 			<Footer />
 		</div>
