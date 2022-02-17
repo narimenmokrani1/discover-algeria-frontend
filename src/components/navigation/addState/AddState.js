@@ -49,7 +49,9 @@ function AddState(props) {
 		<div className='create'>
 			<form className='form' onSubmit={handleSubmit}>
 				<Typography component='div' className='form-title'>
-					Add a State
+					<h1>
+						Add a State here
+					</h1>
 				</Typography>
 				<div className='inputs'>
 					<TextField

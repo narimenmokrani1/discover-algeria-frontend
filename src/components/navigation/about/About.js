@@ -1,14 +1,17 @@
 import React from 'react';
-
+import style from "./About.css"
 function About(props) {
 	return (
-		<div>
-            <h1>About</h1>
+		<div className='about-div'>
+			<h1>About</h1>
 			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
-				dolorum! Laboriosam consequuntur perspiciatis deleniti, enim provident
-				ipsa dolore pariatur corrupti! At ratione quos exercitationem, et a
-				dolor laboriosam odit fugiat.
+				Dicover Algeria is a website where you can learn about the big and
+				diverse continent like "Algeria". you can look up states by region and
+				then discover the attractions available for that specific state. the
+				website started only with 15 states for the hope of adding more states
+				by users. if you want to add a state click on the plus button after
+				navigating to a specific region and add you state and let the world
+				enjoy and discoer it.
 			</p>
 		</div>
 	);

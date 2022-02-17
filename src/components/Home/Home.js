@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import style from './Home.css'
+import style from './Home.css';
 function SearchBar(props) {
 	const navigate = useNavigate();
 	const [state, setState] = useState(null);
@@ -41,6 +41,9 @@ function SearchBar(props) {
 	}
 	return (
 		<div>
+			<div className='text'>
+				<h1 className='algeria'>Discover Algeria</h1>
+			</div>
 			<form className='searchBar-container' onSubmit={findStates}>
 				<select
 					name='issueType'
@@ -48,7 +51,7 @@ function SearchBar(props) {
 					onChange={(event) => {
 						setRegion(event.target.value);
 					}}>
-						<option value="">select a region to look up</option>
+					<option value=''>select a region to look up</option>
 					{noState.map((option, index) => {
 						return (
 							<option key={index} value={option} className='option'>

@@ -15,7 +15,7 @@ function App() {
 			<header>
 				<Navigation />
 			</header>
-				<h1>Discover Algeria</h1>
+			
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/regions/:region' element={<States />} />

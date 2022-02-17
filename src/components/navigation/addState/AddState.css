@@ -7,6 +7,8 @@
 	max-width: 600px;
 	padding: 20px;
 	background-color: var(--beige);
+	margin-top: 8em;
+	
 }
 
 .inputs {
@@ -14,14 +16,10 @@
 	gap: 1em;
 }
 
-.state-input {
-}
-
 .state-input > input {
 	border: 1px solid white;
 	color: white;
 }
-
 .submit-btn {
 	background-image: linear-gradient(#a86a0d, #4d2b04 50%);
 	border-radius: 42px;

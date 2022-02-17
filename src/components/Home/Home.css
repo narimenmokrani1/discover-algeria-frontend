@@ -48,3 +48,15 @@ select {
 	margin-top: 8%;
 	margin-bottom: 5%;
 }
+
+
+.text {
+	font-size: 5em;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(0,0,0,.1);
+    margin: 0;
+    padding: 0;
+	color: var(--beige);
+	text-shadow: 8px 8px #4d2b04 ;
+}

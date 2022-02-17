@@ -1,0 +1,6 @@
+.about-div {
+    margin: 4em;
+    border: 2px solid beige;
+    background-color: var(--beige);
+    font-size: x-large;
+}
