@@ -1,0 +1,74 @@
+/* * {
+    border: 1px solid red;
+} */
+
+.attractions-button {
+	background-image: linear-gradient(#a86a0d, #4d2b04 50%);
+	border-radius: 42px;
+	border-width: 0;
+	box-shadow: rgba(65, 32, 1, 0.24) 0 2px 2px, rgba(194, 99, 10, 0.4) 0 8px 12px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	line-height: 16px;
+	margin: 0;
+	padding: 18px 18px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px, rgba(65, 38, 3, 0.2) 0 0 12px,
+		rgba(57, 31, 91, 0.6) 1px 1px 4px, rgba(80, 43, 2, 0.32) 4px 4px 16px;
+}
+
+.attractions-button:hover {
+	background: linear-gradient(
+		90deg,
+		rgba(245, 156, 0, 1) 0%,
+		rgba(222, 156, 56, 1) 42%,
+		rgba(112, 65, 6, 1) 100%
+	);
+	color: var(--brown);
+}
+
+.details-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	/* border: 2px solid beige; */
+	margin: 2em;
+	padding: 2em;
+    background-color: var(--beige);
+}
+
+.food-container {
+	max-width: 500px;
+	margin: 5em;
+    margin-top: 0;
+}
+
+.food {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.state-img-container {
+	max-width: 500px;
+    margin: 5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.state {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.clothes-container {
+    max-width: 800px;
+}
+
+.clothes {
+    max-width: 100%;
+	max-height: 100%;
+}

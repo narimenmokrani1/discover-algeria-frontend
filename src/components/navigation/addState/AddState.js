@@ -33,7 +33,10 @@ function AddState(props) {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		try {
-			await axios.post('http://localhost:3000/states', state);
+			await axios.post(
+				'https://frozen-journey-66963.herokuapp.com/states',
+				state
+			);
 			navigate(`/`, { replace: true });
 		} catch (err) {}
 	};

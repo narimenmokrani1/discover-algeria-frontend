@@ -10,7 +10,7 @@ function SearchBar(props) {
 	const [region, setRegion] = useState('');
 
 	useEffect(() => {
-		const url = 'http://localhost:3000/states';
+		const url = 'https://frozen-journey-66963.herokuapp.com/states';
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
