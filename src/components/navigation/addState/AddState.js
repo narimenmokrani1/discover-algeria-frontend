@@ -62,7 +62,7 @@ function AddState(props) {
 					/>
 
 					<TextField
-						label='State Name'
+						label='Image of the State'
 						variant='outlined'
 						onChange={handleChange}
 						id='image_url'
@@ -71,16 +71,16 @@ function AddState(props) {
 					/>
 
 					<TextField
-						label='State Name'
+						label='traditional clothes'
 						variant='outlined'
 						onChange={handleChange}
-						id='traditional_clothes'
+						id='traditional_clothes is called?'
 						value={state.traditional_clothes}
 						InputProps={{ className: 'state-input' }}
 					/>
 
 					<TextField
-						label='State Name'
+						label="Paste here the Clothes' image Url"
 						variant='outlined'
 						onChange={handleChange}
 						id='clothes_url'
@@ -89,7 +89,7 @@ function AddState(props) {
 					/>
 
 					<TextField
-						label='State Name'
+						label='Description'
 						variant='outlined'
 						onChange={handleChange}
 						id='description'
@@ -98,7 +98,7 @@ function AddState(props) {
 					/>
 
 					<TextField
-						label='State Name'
+						label='Traditional For this State'
 						variant='outlined'
 						onChange={handleChange}
 						id='traditional_food'
@@ -106,7 +106,7 @@ function AddState(props) {
 						InputProps={{ className: 'state-input' }}
 					/>
 					<TextField
-						label='Food Url'
+						label="Paste here the Food's image Url"
 						variant='outlined'
 						onChange={handleChange}
 						id='food_url'
