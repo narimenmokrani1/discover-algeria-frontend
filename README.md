@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Discover Algeria
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dicover Algeria is a website where you can learn about the big and diverse continent like "Algeria". you can look up states by region and then discover the attractions available for that specific state. the website started only with 15 states for the hope of adding more states by users. if you want to add a state click on the plus button after navigating to a specific region and add you state and let the world enjoy and discoer it. the technologies used tp buil this app are REEAT.js mertialUI, CSS HTML
 
-## Available Scripts
+## Technologies use
 
-In the project directory, you can run:
+- React.js
+- HTML
+- CSS
+- Javascript
+- Heroku
+- MaterialUi
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## wireframe
 
-### `npm test`
+![main]('./../public/images/main.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+![about]('./../public/images/about.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![states](./public/images/states.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+![details]('./../public/images/state%20detsails.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![addstate]('./../public/images/addstate.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## App Screenshot
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![one]('./../public/images/1.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+![two]('./../public/images/2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+![three]('./../public/images/3.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+![four]('./../public/images/4.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## User stories
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### MVP 
+* As a user, I want to be able to look up States by the type of region
+* As a user, I want to be able to see the food and clothes of the state I select
+* As a user, I want to see attractions of the state I select
+* As a user, I want to be able to add a state
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Stretch Goals:
+* As a user, I want to see some random pictures of some states
+* AS a user, I want to be able to look up destination by state
+ As a user, I want to be able to create an account
+As a user, i wan to be able to like, and delete a state in my favorites
