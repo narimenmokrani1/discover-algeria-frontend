@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-
+import style from './Attraction.css';
 function Attractions(props) {
 	const { _id } = useParams();
 	const [state, setState] = useState(null);
@@ -24,13 +24,15 @@ function Attractions(props) {
 	return (
 		<div>
 			<header>
-				<h1>{state.state}</h1>
+				<h1>{state.state}'s Attractions</h1>
 			</header>
 			{state.places_to_visit.map((place) => {
 				return (
-					<div>
+					<div className='attraction-container'>
 						<h2>{place.name}</h2>
-						<img src={place.img_url} alt='' />
+						<div className='attraction-img-container'>
+							<img src={place.img_url} alt='' className='attraction-img' />
+						</div>
 					</div>
 				);
 			})}

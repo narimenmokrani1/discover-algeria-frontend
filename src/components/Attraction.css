@@ -1,0 +1,20 @@
+
+
+.attraction-container {
+    background-color: var(--beige);
+   max-width: 600px;
+   margin-left: 25em;
+   display: flex;
+   margin-bottom: 3em;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.attraction-img-containe {
+	max-height: 200px;
+}
+
+.attraction-img {
+	max-width: 100%;
+	max-height: 100%;
+}
