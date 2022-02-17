@@ -26,16 +26,18 @@ function Attractions(props) {
 			<header>
 				<h1>{state.state}'s Attractions</h1>
 			</header>
-			{state.places_to_visit.map((place) => {
-				return (
-					<div className='attraction-container'>
-						<h2>{place.name}</h2>
-						<div className='attraction-img-container'>
-							<img src={place.img_url} alt='' className='attraction-img' />
+			<div className='all-container'>
+				{state.places_to_visit.map((place) => {
+					return (
+						<div className='attraction-container'>
+							<h2>{place.name}</h2>
+							<div className='attraction-img-container'>
+								<img src={place.img_url} alt='' className='attraction-img' />
+							</div>
 						</div>
-					</div>
-				);
-			})}
+					);
+				})}
+			</div>
 		</div>
 	);
 }
