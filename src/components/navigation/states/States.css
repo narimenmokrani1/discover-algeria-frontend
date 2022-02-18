@@ -23,6 +23,8 @@ body {
   list-style-type: none;
 }
 
+/* got the styling from 'https://codepen.io/seyedi/pen/zYoeLEv' */
+
 .card {
   position: relative;
   display: block;

@@ -27,6 +27,7 @@ function AddState(props) {
 
 	const handleChange = (event) => {
 		event.preventDefault();
+
 		setState({ ...state, [event.target.id]: event.target.value });
 	};
 
@@ -62,6 +63,7 @@ function AddState(props) {
 						value={state.state}
 						InputProps={{ className: 'state-input' }}
 					/>
+					
 
 					<TextField
 						label='Image of the State'
