@@ -10,7 +10,7 @@ function StateDetails(props) {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		const url = `https://frozen-journey-66963.herokuapp.com/states/${_id}`;
+		const url = `https://discoveralgeria.onrender.com/states/${_id}`;
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
@@ -29,7 +29,7 @@ function StateDetails(props) {
 	return (
 		<div className='details-container'>
 			<div className='clothes-container'>
-				<img src={state.clothes_url} alt='' className='clothes'/>
+				<img src={state.clothes_url} alt='' className='clothes' />
 				<h2>{state.traditional_clothes}</h2>
 				<button onClick={findAttraction} className='attractions-button'>
 					Click to check attractions

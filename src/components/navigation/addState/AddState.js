@@ -34,10 +34,7 @@ function AddState(props) {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		try {
-			await axios.post(
-				'https://frozen-journey-66963.herokuapp.com/states',
-				state
-			);
+			await axios.post('https://discoveralgeria.onrender.com/states', state);
 			navigate(`/`, { replace: true });
 		} catch (err) {}
 	};
@@ -50,9 +47,7 @@ function AddState(props) {
 		<div className='create'>
 			<form className='form' onSubmit={handleSubmit}>
 				<Typography component='div' className='form-title'>
-					<h1>
-						Add a State here
-					</h1>
+					<h1>Add a State here</h1>
 				</Typography>
 				<div className='inputs'>
 					<TextField
@@ -63,7 +58,6 @@ function AddState(props) {
 						value={state.state}
 						InputProps={{ className: 'state-input' }}
 					/>
-					
 
 					<TextField
 						label='Image of the State'

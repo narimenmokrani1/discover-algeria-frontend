@@ -11,7 +11,7 @@ function States() {
 	const [statesByRegion, setStatesByRegion] = useState([]);
 	const navigate = useNavigate();
 	useEffect(() => {
-		const url = `https://frozen-journey-66963.herokuapp.com/states/regions/${region}`;
+		const url = `https://discoveralgeria.onrender.com/states/regions/${region}`;
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
