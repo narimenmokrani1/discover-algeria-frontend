@@ -9,7 +9,7 @@ function Attractions(props) {
 	const [state, setState] = useState(null);
 
 	useEffect(() => {
-		const url = `https://frozen-journey-66963.herokuapp.com/states/${_id}`;
+		const url = `https://discoveralgeria.onrender.com/states/${_id}`;
 		fetch(url)
 			.then((res) => res.json())
 			.then((res) => {
